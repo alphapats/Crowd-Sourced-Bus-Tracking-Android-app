@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vinay.a163050054_app.RecordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <TextView
+            android:id="@+id/StartRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="@android:dimen/notification_large_icon_height"
+            android:ems="10"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="Start Recording"
+            android:textSize="22dp" />
+
+        <ToggleButton
+            android:id="@+id/onOffToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/StartRecording"
+            android:text="ToggleButton" />
+
+        <Spinner
+            android:id="@+id/userLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StartRecording"
+            android:hint="user label (stationary/walking)" />
+
+        <TextView
+            android:id="@+id/listTitle"
+            android:text="List of last five recordings"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/userLabel"
+            android:layout_height="@android:dimen/notification_large_icon_height"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:ems="10"
+            />
+
+        <ListView
+            android:id="@+id/timeStampListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/listTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
